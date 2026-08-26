@@ -14,41 +14,53 @@
     <!-- simply countdown -->
     <link rel="stylesheet" href="countdown/circle.css" />
     <script src="countdown/simplyCountdown.umd.js"></script>
+    <script src="i18n/en.js"></script>
+    <script src="i18n/vi.js"></script>
+    <script src="i18n.js"></script>
   </head>
   <body>
     <!-- bagian hero -->
     <section id="hero" class="hero w-100 h-100 p-3 mx-auto text-center d-flex justify-content-center align-items-center text-white">
       <main>
-        <h4>Kepada Yth.<span>Bapak/Ibu/Saudara/i, </span></h4>
-        <h1>Rama & Sinta</h1>
-        <p>Akan melangsungkan resepsi pernikan dalam:</p>
+        <h4><span data-i18n="hero.to">Dear</span> <span id="guestGreeting">Mr./Ms./Family,</span></h4>
+        <h1 data-i18n="common.brand">Rama &amp; Sinta</h1>
+        <p data-i18n="hero.subtitle">We will be celebrating our wedding reception in:</p>
         <!-- nanti ada countdown disini -->
         <div id="countdown" class="countdown simply-countdown-circle mt-4 mb-4"></div>
-        <a href="#home" class="btn mt-4" btn-lg onClick="enableScroll()">Lihat Undangan</a>
+        <a href="#home" class="btn mt-4" btn-lg onClick="enableScroll()" data-i18n="hero.cta">View Invitation</a>
       </main>
     </section>
 
     <!-- bagian navbar -->
     <nav class="navbar navbar-expand-md bg-transparent sticky-top mynavbar">
       <div class="container">
-        <a class="navbar-brand" href="#">Rama & Sinta</a>
+        <a class="navbar-brand" href="#" data-i18n="common.brand">Rama &amp; Sinta</a>
+        <div class="d-flex gap-2 ms-auto me-2">
+          <button type="button" class="btn btn-sm btn-outline-dark" data-lang="en" data-i18n="lang.en">EN</button>
+          <button type="button" class="btn btn-sm btn-outline-dark" data-lang="vi" data-i18n="lang.vi">VI</button>
+        </div>
         <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
           <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Rama & Sinta</h5>
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel" data-i18n="common.brand">Rama &amp; Sinta</h5>
             <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
           </div>
           <div class="offcanvas-body">
-              <div class="navbar-nav ms-auto">
-                <a class="nav-link" href="#home">Home</a>
-                <a class="nav-link" href="#info">Info</a>
-                <a class="nav-link" href="#story">Story</a>
-                <a class="nav-link" href="#gallery">Gallery</a>
-                <a class="nav-link" href="#rsvp">RSVP</a>
-                <a class="nav-link" href="#gifts">Gifts</a>
-              </div>
+            <div class="navbar-nav ms-auto">
+              <a class="nav-link" href="#home" data-i18n="nav.home">Home</a>
+              <a class="nav-link" href="#info" data-i18n="nav.info">Info</a>
+              <a class="nav-link" href="#story" data-i18n="nav.story">Story</a>
+              <a class="nav-link" href="#gallery" data-i18n="nav.gallery">Gallery</a>
+              <a class="nav-link" href="#rsvp" data-i18n="nav.rsvp">RSVP</a>
+              <a class="nav-link" href="#gifts" data-i18n="nav.gifts">Gifts</a>
+            </div>
+            <div class="d-flex justify-content-center gap-2 mt-4">
+              <button type="button" class="btn btn-sm btn-outline-dark" data-lang="en" data-i18n="lang.en">EN</button>
+              <button type="button" class="btn btn-sm btn-outline-dark" data-lang="vi" data-i18n="lang.vi">VI</button>
+            </div>
+          </div>
         </div>
       </div>
     </nav>
@@ -58,9 +70,9 @@
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-md-8 text-center">
-            <h2>Acara Pernikahan</h2>
-            <h3>Diselenggarakan pada 22 Mei 2025 di Sidoarjo</h3>
-            <p>Oleh karena itu, dengan segala hormat, kami bermaksud untuk mengundang Bapak/Ibu/Saudara/i, untuk hadir pada acara pernikahan kami.</p>
+            <h2 data-i18n="home.heading">Wedding Celebration</h2>
+            <h3 data-i18n="home.subheading">Held on May 22, 2025 in Sidoarjo</h3>
+            <p data-i18n="home.intro">With full respect, we would like to invite you to attend our wedding celebration.</p>
           </div>
 
           <div class="row couple">
@@ -68,9 +80,9 @@
             <div class="col-lg-6">
               <div class="row">
                 <div class="col-8 text-end">
-                  <h3>Rama</h3>
-                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis nulla aliquam, quod nihil quo enim.</p>
-                  <p>Putra dari Bpk. Lorem <br> dan <br> Ibu Ipsum</p>
+                  <h3 data-i18n="common.brand">Rama &amp; Sinta</h3>
+                  <p data-i18n="couple.intro">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis nulla aliquam, quod nihil quo enim.</p>
+                  <p><span data-i18n="couple.groomParentsLine1">Son of Mr. Lorem</span><br><span data-i18n="common.and">and</span><br><span data-i18n="couple.groomParentsLine2">Mrs. Ipsum</span></p>
                 </div>
                 <div class="col-4">
                   <img src="img/pengantinPria.png" alt="pengantinPria" class="img-responsive rounded-circle">
@@ -85,9 +97,9 @@
                   <img src="img/pengantinWanita.png" alt="pengantinWanita" class="img-responsive rounded-circle">
                 </div>
                 <div class="col-8">
-                  <h3>Sinta</h3>
-                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis nulla aliquam, quod nihil quo enim.</p>
-                  <p>Putri dari Bpk. Ipsum <br> dan <br> Ibu Lorem</p>
+                  <h3 data-i18n="common.brand">Rama &amp; Sinta</h3>
+                  <p data-i18n="couple.intro">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis nulla aliquam, quod nihil quo enim.</p>
+                  <p><span data-i18n="couple.brideParentsLine1">Daughter of Mr. Ipsum</span><br><span data-i18n="common.and">and</span><br><span data-i18n="couple.brideParentsLine2">Mrs. Lorem</span></p>
                 </div>
               </div>
             </div>
@@ -101,56 +113,48 @@
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-md-8 col-10 text-center">
-            <h2>Informasi Acara</h2>
-            <p class="alamat">Alamat: <br>Hotel Luminor Sidoarjo <br>Jl. Pahlawan, Jetis, Lemahputro, Kec. Sidoarjo, Kabupaten Sidoarjo, Jawa Timur 61213</p>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d63298.38279387083!2d112.66196664644774!3d-7.448770886511811!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x2dd7e147d8609f2d%3A0xe5726fef581eeadd!2sJl.%20Pahlawan%2C%20Jetis%2C%20Lemahputro%2C%20Kec.%20Sidoarjo%2C%20Kabupaten%20Sidoarjo%2C%20Jawa%20Timur%2061213!3m2!1d-7.448857899999999!2d112.70316679999999!5e0!3m2!1sid!2sid!4v1745850010354!5m2!1sid!2sid" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            <a href="https://maps.app.goo.gl/Tx99TrB7qfLSzjNB8" target="_blank" class="btn btn-light btn-sm my-4">Klik untuk membuka peta</a>
-            <p class="description">Diharapkan untuk tidak salah alamat dan tanggal. Manakala tiba di tujuan namun tidak ada tanda-tanda sedang dilangsungkan pernikahan, boleh jadi Anda salah jadwal, atau salah tempat.</p>
+            <h2 data-i18n="info.heading">Event Information</h2>
+            <p class="alamat"><span data-i18n="info.addressLabel">Address:</span><br><span data-i18n="info.venue">Hotel Luminor Sidoarjo</span><br><span data-i18n="info.addressLine">Jl. Pahlawan, Jetis, Lemahputro, Kec. Sidoarjo, Kabupaten Sidoarjo, Jawa Timur 61213</span></p>
+            <iframe title="Hotel Luminor Sidoarjo location map" class="maps-frame" src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d63298.38279387083!2d112.66196664644774!3d-7.448770886511811!2m3!1f0.2f0!3f0.2f0!2m3!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x2dd7e147d8609f2d%3A0xe5726fef581eeadd!2sJl.%20Pahlawan%2C%20Jetis%2C%20Lemahputro%2C%20Kec.%20Sidoarjo%2C%20Kabupaten%20Sidoarjo%2C%20Jawa%20Timur%2061213!3m2!1d-7.448857899999999!2d112.70316679999999!5e0!3m2!1sid!2sid!4v1745850010354!5m2!1sid!2sid" width="100%" height="250" allowfullscreen=""></iframe>
+            <a href="https://maps.app.goo.gl/Tx99TrB7qfLSzjNB8" target="_blank" rel="noopener" class="btn btn-light btn-sm my-4" data-i18n="info.mapButton">Open map</a>
+            <p class="description" data-i18n="info.description">Please double-check the address and date. If you arrive at the venue and see no signs of the wedding, you may be on the wrong schedule or at the wrong place.</p>
           </div>
         </div>
         <div class="row justify-content-center mt-4">
           <div class="col-md-5 col-10">
             <div class="card text-center text-bg-light mb-5">
-              <div class="card-header">
-                Akad Nikah
-              </div>
+              <div class="card-header" data-i18n="info.akad.title">Wedding Ceremony</div>
               <div class="card-body">
                 <div class="row justify-content-center">
                   <div class="col-md-6">
                     <i class="bi bi-clock d-block"></i>
-                    <span>08.00 - 10.00</span>
+                    <span data-i18n="info.akad.time">08:00 - 10:00</span>
                   </div>
                   <div class="col-md-6">
                     <i class="bi bi-calendar3 d-block"></i>
-                    <span>Minggu, 22 Mei 2025</span>
+                    <span data-i18n="info.eventDate">Sunday, May 22, 2025</span>
                   </div>
                 </div>
               </div>
-              <div class="card-footer">
-                Saat acara akad diharapkan kondusif untuk menjaga kekhidmatan dan kekhusyukan seluruh prosesi.
-              </div>
+              <div class="card-footer" data-i18n="info.akad.note">We kindly ask for a calm and respectful atmosphere during the wedding ceremony.</div>
             </div>
           </div>
           <div class="col-md-5 col-10">
             <div class="card text-center text-bg-light">
-              <div class="card-header">
-                Resepsi
-              </div>
+              <div class="card-header" data-i18n="info.reception.title">Reception</div>
               <div class="card-body">
                 <div class="row justify-content-center">
                   <div class="col-md-6">
                     <i class="bi bi-clock d-block"></i>
-                    <span>10.00 - Selesai</span>
+                    <span data-i18n="info.reception.time">10:00 - End</span>
                   </div>
                   <div class="col-md-6">
                     <i class="bi bi-calendar3 d-block"></i>
-                    <span>Minggu, 22 Mei 2025</span>
+                    <span data-i18n="info.eventDate">Sunday, May 22, 2025</span>
                   </div>
                 </div>
               </div>
-              <div class="card-footer">
-                Merupakan kehormatan dan kebahagiaan bagi kami apabila Anda berkenan hadir dan memberikan doa restu.
-              </div>
+              <div class="card-footer" data-i18n="info.reception.note">It would be our honor and happiness if you would attend and bless us.</div>
             </div>
           </div>
         </div>
@@ -162,9 +166,9 @@
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-md-8 col-10 text-center">
-            <span>Bagaimana Cinta Kami Bersemi</span>
-            <h2>Cerita Kami</h2>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi officia deserunt nam, adipisci porro doloremque.</p>
+            <span data-i18n="story.eyebrow">How Our Love Blossomed</span>
+            <h2 data-i18n="story.title">Our Story</h2>
+            <p data-i18n="story.intro">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi officia deserunt nam, adipisci porro doloremque.</p>
           </div>
         </div>
 
@@ -172,40 +176,40 @@
           <div class="col">
             <ul class="timeline">
               <li>
-                <div class="timeline-image" style="background-image: url(img/prewed2.jpeg);"></div>
+                <div class="timeline-image" data-image="img/prewed2.jpeg"></div>
                 <div class="timeline-panel">
                   <div class="timeline-heading">
-                    <h3>Pertama Bertemu</h3>
-                    <span>14 September 2020</span>
+                    <h3 data-i18n="story.first.title">First Meeting</h3>
+                    <span data-i18n="story.first.date">September 14, 2020</span>
                   </div>
                   <div class="timeline-body">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident repellendus sint rerum adipisci, obcaecati aperiam!</p>
+                    <p data-i18n="story.timelineText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident repellendus sint rerum adipisci, obcaecati aperiam!</p>
                   </div>
                 </div>
               </li>
 
               <li class="timeline-inverted">
-                <div class="timeline-image" style="background-image: url(https://picsum.photos/id/1/300/300);"></div>
+                <div class="timeline-image" data-image="https://picsum.photos/id/1/300/300"></div>
                 <div class="timeline-panel">
                   <div class="timeline-heading">
-                    <h3>Mulai Serius</h3>
-                    <span>11 November 2020</span>
+                    <h3 data-i18n="story.second.title">Started Seriously</h3>
+                    <span data-i18n="story.second.date">November 11, 2020</span>
                   </div>
                   <div class="timeline-body">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident repellendus sint rerum adipisci, obcaecati aperiam!</p>
+                    <p data-i18n="story.timelineText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident repellendus sint rerum adipisci, obcaecati aperiam!</p>
                   </div>
                 </div>
               </li>
 
               <li>
-                <div class="timeline-image" style="background-image: url(https://picsum.photos/id/1/301/301);"></div>
+                <div class="timeline-image" data-image="https://picsum.photos/id/1/301/301"></div>
                 <div class="timeline-panel">
                   <div class="timeline-heading">
-                    <h3>Tunangan</h3>
-                    <span>22 Mei 2023</span>
+                    <h3 data-i18n="story.third.title">Engagement</h3>
+                    <span data-i18n="story.third.date">May 22, 2023</span>
                   </div>
                   <div class="timeline-body">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident repellendus sint rerum adipisci, obcaecati aperiam!</p>
+                    <p data-i18n="story.timelineText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident repellendus sint rerum adipisci, obcaecati aperiam!</p>
                   </div>
                 </div>
               </li>
@@ -221,50 +225,50 @@
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-md-8 col-10 text-center">
-            <span>Memori Perjalanan Kami</span>
-            <h2>Galeri Foto</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, hic.</p>
+            <span data-i18n="gallery.eyebrow">Memories of Our Journey</span>
+            <h2 data-i18n="gallery.title">Photo Gallery</h2>
+            <p data-i18n="gallery.intro">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, hic.</p>
           </div>
 
           <div class="row row-cols-lg-4 row-cols-md-3 row-cols-sm-2 row-cols-1 justify-content-center">
             <div class="col mt-3">
-              <a href="img/gallery/galleryMain1.jpeg" data-toggle="lightbox" data-caption="Rama & Sinta 1" data-galery="mygallery">
+              <a href="img/gallery/galleryMain1.jpeg" data-toggle="lightbox" data-i18n-caption="common.brand" data-caption-number="1" data-galery="mygallery">
                 <img src="https://picsum.photos/id/200/1200/768" alt="Rama & Sinta 1" class="img-fluid w-100 rounded">
               </a>
             </div>
 
             <div class="col mt-3">
-              <a href="img/gallery/tumbnail/galleryMain2.jpeg" data-toggle="lightbox" data-caption="Rama & Sinta 2" data-galery="mygallery">
+              <a href="img/gallery/tumbnail/galleryMain2.jpeg" data-toggle="lightbox" data-i18n-caption="common.brand" data-caption-number="2" data-galery="mygallery">
                 <img src="https://picsum.photos/id/5/1200/768" alt="Rama & Sinta 2" class="img-fluid w-100 rounded">
               </a>
             </div>
             
             <div class="col mt-3">
-              <a href="img/gallery/tumbnail/gallery1.jpeg" data-toggle="lightbox" data-caption="Rama & Sinta 3" data-galery="mygallery">
+              <a href="img/gallery/tumbnail/gallery1.jpeg" data-toggle="lightbox" data-i18n-caption="common.brand" data-caption-number="3" data-galery="mygallery">
                 <img src="https://picsum.photos/id/500/1200/768" alt="Rama & Sinta 3" class="img-fluid w-100 rounded">
               </a>
             </div>
             
             <div class="col mt-3">
-              <a href="img/gallery/tumbnail/gallery2.jpeg" data-toggle="lightbox" data-caption="Rama & Sinta 4" data-galery="mygallery">
+              <a href="img/gallery/tumbnail/gallery2.jpeg" data-toggle="lightbox" data-i18n-caption="common.brand" data-caption-number="4" data-galery="mygallery">
                 <img src="https://picsum.photos/id/900/1200/768" alt="Rama & Sinta 4" class="img-fluid w-100 rounded">
               </a>
             </div>
             
             <div class="col mt-3">
-              <a href="img/gallery/tumbnail/gallery3.jpeg" data-toggle="lightbox" data-caption="Rama & Sinta 5" data-galery="mygallery">
+              <a href="img/gallery/tumbnail/gallery3.jpeg" data-toggle="lightbox" data-i18n-caption="common.brand" data-caption-number="5" data-galery="mygallery">
                 <img src="https://picsum.photos/id/700/1200/768" alt="Rama & Sinta 5" class="img-fluid w-100 rounded">
               </a>
             </div>
             
             <div class="col mt-3">
-              <a href="img/gallery/tumbnail/gallery4.jpeg" data-toggle="lightbox" data-caption="Rama & Sinta 6" data-galery="mygallery">
+              <a href="img/gallery/tumbnail/gallery4.jpeg" data-toggle="lightbox" data-i18n-caption="common.brand" data-caption-number="6" data-galery="mygallery">
                 <img src="https://picsum.photos/id/375/1200/768" alt="Rama & Sinta 6" class="img-fluid w-100 rounded">
               </a>
             </div>
             
             <div class="col mt-3">
-              <a href="img/gallery/tumbnail/galleryMain2.jpeg" data-toggle="lightbox" data-caption="Rama & Sinta 7" data-galery="mygallery">
+              <a href="img/gallery/tumbnail/galleryMain2.jpeg" data-toggle="lightbox" data-i18n-caption="common.brand" data-caption-number="7" data-galery="mygallery">
                 <img src="https://picsum.photos/id/260/1200/768" alt="Rama & Sinta 7" class="img-fluid w-100 rounded">
               </a>
             </div>
@@ -279,39 +283,39 @@
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-md-8 col-10 text-center">
-            <h2>Konfirmasi Kehadiran</h2>
-            <p>Isi form di bawah ini untuk melakukan konfirmasi kehadiran.</p>
+            <h2 data-i18n="rsvp.heading">Confirm Attendance</h2>
+            <p data-i18n="rsvp.intro">Fill in the form below to confirm your attendance.</p>
           </div>
 
           <form class="row row-cols-md-auto g-3 align-items-center justify-content-center" method="POST" 
           action="https://script.google.com/macros/s/AKfycbzonA-VRMB8dyMizhVNdsWeHFaeTUrcex8kHIL4iKZfs0Kuymo-rhFMn3ORmPjxIFOQ/exec" id="my-form">
             <div class="col-12">
               <div class="mb-3">
-                <label for="nama" class="form-label">Nama</label>
+                <label for="nama" class="form-label" data-i18n="rsvp.name">Name</label>
                 <input type="text" class="form-control" id="nama" name="nama">
               </div>
             </div>
 
             <div class="col-12">
               <div class="mb-3">
-                <label for="jumlah" class="form-label">Jumlah keluarga hadir</label>
+                <label for="jumlah" class="form-label" data-i18n="rsvp.guests">Number of family members attending</label>
                 <input type="number" class="form-control" id="jumlah" name="jumlah" min="1" max="5" length="1" value="1">
               </div>
             </div>
 
             <div class="col-12">
               <div class="mb-3">
-                <label for="status" class="form-label">Konfirmasi</label>
+                <label for="status" class="form-label" data-i18n="rsvp.status">Confirmation</label>
                 <select name="status" id="status" class="form-select">
-                  <option selected>Pilih salah satu</option>
-                  <option value="Hadir">Hadir</option>
-                  <option value="Tidak Hadir">Tidak Hadir</option>
+                  <option selected data-i18n="rsvp.selectPlaceholder">Please select one</option>
+                  <option value="Hadir" data-i18n="rsvp.attending">Attending</option>
+                  <option value="Tidak Hadir" data-i18n="rsvp.notAttending">Not attending</option>
                 </select>
               </div>
             </div>
 
-            <div class="col-12" style="margin-top: 30px">
-              <button class="btn btn-primary">Kirim</button>
+            <div class="col-12 mt-4">
+              <button type="submit" class="btn btn-primary" data-i18n="rsvp.submit">Send</button>
             </div>
           </form>
 
@@ -332,7 +336,7 @@
                   (function() { // DON'T EDIT BELOW THIS LINE
                   var d = document, s = d.createElement('script');
                   s.src = 'https://mywedding1-1.disqus.com/embed.js';
-                  s.setAttribute('data-timestamp', +new Date());
+                  s.dataset.timestamp = Date.now();
                   (d.head || d.body).appendChild(s);
                   })();
               </script>
@@ -348,9 +352,9 @@
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-md-8 col-10 text-center">
-            <span>ungkapan tanda kasih</span>
-            <h2>Kirim Hadiah</h2>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi, eum.</p>
+            <span data-i18n="gifts.eyebrow">A token of love</span>
+            <h2 data-i18n="gifts.title">Send a Gift</h2>
+            <p data-i18n="gifts.intro">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi, eum.</p>
           </div>
         </div>
 
@@ -358,11 +362,11 @@
           <div class="col-md-6">
             <ul class="list-group">
               <li class="list-group-item">
-               <div class="fw-bold">BCA</div>  
-                1234567 - Rama
+               <div class="fw-bold" data-i18n="common.bankName">BCA</div>  
+                <span data-i18n="common.bankAccount">1234567 - Rama</span>
               </li>
               <li class="list-group-item">
-               <div class="fw-bold">Saweria</div>  
+               <div class="fw-bold" data-i18n="gifts.saweria">Saweria</div>  
                 <img src="" alt="" class="" width="">
               </li>
             </ul>
@@ -375,15 +379,15 @@
         <div class="container">
           <div class="row">
             <div class="col text-center">
-              <small class="block">&copy;2025 Dino Wedding. All Rights Reserved.</small>
-              <small class="block">Design by: <a href="https://instagram.com/">@Dino</a></small>
+              <small class="block" data-i18n="footer.rights">©2025 Dino Wedding. All Rights Reserved.</small>
+              <small class="block"><span data-i18n="footer.design">Design by:</span> <a href="https://instagram.com/" data-i18n="common.designerHandle">@Dino</a></small>
               
               <ul class="mt-3">
-                <li><a href="#"><i class="bi bi-instagram"></i></a></li>
-                <li><a href="#"><i class="bi bi-youtube"></i></a></li>
-                <li><a href="#"><i class="bi bi-twitter"></i></a></li>
-                <li><a href="#"><i class="bi bi-facebook"></i></a></li>
-                <li><a href="#"><i class="bi bi-tiktok"></i></a></li>
+                <li><a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a></li>
+                <li><a href="#" aria-label="YouTube"><i class="bi bi-youtube"></i></a></li>
+                <li><a href="#" aria-label="Twitter"><i class="bi bi-twitter"></i></a></li>
+                <li><a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a></li>
+                <li><a href="#" aria-label="TikTok"><i class="bi bi-tiktok"></i></a></li>
               </ul>
             
             </div>
@@ -397,50 +401,14 @@
           <source src="audio/cintaVina.mp3" type="audio/mp3">
         </audio>
 
-        <div class="audio-icon-wrapper" style="display: none;">
+        <button type="button" class="audio-icon-wrapper audio-hidden" aria-label="Toggle audio">
           <i class="bi bi-disc"></i>
-        </div>
+        </button>
        </div>
 
 <!-- script -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bs5-lightbox@1.8.5/dist/index.bundle.min.js"></script>
-
-    <script>
-      document.addEventListener('DOMContentLoaded', function () {
-        simplyCountdown('#countdown', {
-          year: 2025,
-          month: 5,
-          day: 22,
-          hours: 8, // Target hour [0-23], default: 0
-          minutes: 0, // Target minute [0-59], default: 0
-          seconds: 0, // Target second [0-59], default: 0
-          words: {
-            // Custom labels, with lambda for plurals
-            days: { root: 'day', lambda: (root, n) => (n > 1 ? root + 's' : root) },
-            hours: { root: 'hour', lambda: (root, n) => (n > 1 ? root + 's' : root) },
-            minutes: { root: 'minute', lambda: (root, n) => (n > 1 ? root + 's' : root) },
-            seconds: { root: 'second', lambda: (root, n) => (n > 1 ? root + 's' : root) },
-          },
-          plural: true, // Use plurals for labels
-          inline: false, // Inline format: e.g., "24 days, 4 hours, 2 minutes"
-          inlineSeparator: ', ', // Separator for inline format, default: ", "
-          inlineClass: 'simply-countdown-inline', // CSS class for inline countdown
-          enableUtc: false, // Use UTC time if true
-          refresh: 1000, // Refresh interval in ms, default: 1000
-          sectionClass: 'simply-section', // CSS class for each countdown section
-          amountClass: 'simply-amount', // CSS class for numeric values
-          wordClass: 'simply-word', // CSS class for unit labels
-          zeroPad: false, // Pad numbers with leading zero
-          removeZeroUnits: false, // Remove units with zero value
-          countUp: false, // Count up after reaching zero
-          onEnd: () => {}, // Callback when countdown ends
-          onStop: () => {}, // Callback when countdown is stopped
-          onResume: () => {}, // Callback when countdown is resumed
-          onUpdate: (params) => {}, // Callback when countdown is updated
-        });
-      });
-    </script>
     <!-- solve hasil dari penanganan overflow -->
     <script>
       const stickyTop = document.querySelector('.sticky-top');
@@ -477,7 +445,6 @@
       function enableScroll() {
         window.onscroll = function() { }
         rootElement.style.scrollBehavior = 'smooth';
-        //localStorage.setItem('opened', 'true');
         playAudio()
       }
 
@@ -502,9 +469,6 @@
 
         isPlaying = !isPlaying;
       }
-      // if(!localStorage.getItem('opened')){
-      //   disableScroll();
-      // }
       disableScroll();
     </script>
 
@@ -521,24 +485,11 @@
       body: data,
       })
       .then(() => {
-      alert("Konfirmasi kehadiran, Success!");
+      alert(globalThis.weddingI18n.getText('rsvp.success'));
       })
       });
       });
 
-     </script>
-
-     <!-- js menamai undangan sesuai nama tamu -->
-     <script>
-      const urlParams = new URLSearchParams(window.location.search); //pengambilan parameter dari url yang bernilai nama tamu
-      const nama = urlParams.get('n') || '';
-      const pronoun = urlParams.get('p') || '';
-
-      // pemanggilan element yang akan diisi nama dari url
-      const namaContainer = document.querySelector('.hero h4 span');
-      namaContainer.innerText = `${pronoun} ${nama},`;
-
-      document.querySelector('#nama').value = nama;
      </script>
 
   </body>
