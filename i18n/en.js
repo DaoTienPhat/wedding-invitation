@@ -1,10 +1,10 @@
 window.translations = window.translations || {};
 window.translations.en = {
   common: {
-    brand: 'Rama & Sinta',
+    brand: 'Phát & Hiền',
     and: 'and',
     bankName: 'BCA',
-    bankAccount: '1234567 - Rama',
+    bankAccount: '1234567 - DAO TIEN PHAT',
     designerHandle: '@Dino'
   },
   nav: {
@@ -27,11 +27,15 @@ window.translations.en = {
   },
   home: {
     heading: 'Wedding Celebration',
-    subheading: 'Held on May 22, 2025 in Sidoarjo',
+    subheading: 'Held on December 20, 2026',
+    subheading2: 'in Xuyen Moc',
     intro: 'With full respect, we would like to invite you to attend our wedding celebration.'
   },
   couple: {
-    intro: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis nulla aliquam, quod nihil quo enim.',
+    groomName: 'Đào Tiến Phát',
+    brideName: 'Nguyễn Thị Hiền',
+    groomIntro: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis nulla aliquam, quod nihil quo enim.',
+    brideIntro: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis nulla aliquam, quod nihil quo enim.',
     groomParentsLine1: 'Son of Mr. Lorem',
     groomParentsLine2: 'Mrs. Ipsum',
     brideParentsLine1: 'Daughter of Mr. Ipsum',
@@ -40,19 +44,18 @@ window.translations.en = {
   info: {
     heading: 'Event Information',
     addressLabel: 'Address:',
-    venue: 'Hotel Luminor Sidoarjo',
-    addressLine: 'Jl. Pahlawan, Jetis, Lemahputro, Kec. Sidoarjo, Kabupaten Sidoarjo, Jawa Timur 61213',
-    mapButton: 'Open map',
+    venue: 'Home',
+    addressLine: '50 Bạch Đằng, xã Hồ Tràm, thành phố Hồ Chí Minh, Việt Nam', mapButton: 'Open map',
     description: 'Please double-check the address and date. If you arrive at the venue and see no signs of the wedding, you may be on the wrong schedule or at the wrong place.',
-    eventDate: 'Sunday, May 22, 2025',
+    eventDate: 'Sunday, December 22, 2026',
     akad: {
       title: 'Wedding Ceremony',
-      time: '08:00 - 10:00',
+      time: '10:00 - 12:00',
       note: 'We kindly ask for a calm and respectful atmosphere during the wedding ceremony.'
     },
     reception: {
       title: 'Reception',
-      time: '10:00 - End',
+      time: '12:00 - End',
       note: 'It would be our honor and happiness if you would attend and bless us.'
     }
   },
@@ -63,7 +66,7 @@ window.translations.en = {
     timelineText: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident repellendus sint rerum adipisci, obcaecati aperiam!',
     first: {
       title: 'First Meeting',
-      date: 'September 14, 2020'
+      date: '14 September 2014'
     },
     second: {
       title: 'Started Seriously',
@@ -71,14 +74,14 @@ window.translations.en = {
     },
     third: {
       title: 'Engagement',
-      date: 'May 22, 2023'
+      date: 'November 22, 2026'
     }
   },
   gallery: {
     eyebrow: 'Memories of Our Journey',
     title: 'Photo Gallery',
     intro: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, hic.',
-    caption: 'Rama & Sinta'
+    caption: 'Groom & Bride'
   },
   rsvp: {
     heading: 'Confirm Attendance',

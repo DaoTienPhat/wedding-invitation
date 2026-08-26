@@ -1,6 +1,6 @@
 const translations = globalThis.translations || {};
 const storageKey = 'weddingLocale';
-const defaultLocale = (globalThis.navigator?.language?.toLowerCase?.() || '').startsWith('vi') ? 'vi' : 'en';
+const defaultLocale = (globalThis.navigator?.language?.toLowerCase?.() || '').startsWith('en') ? 'en' : 'vi';
 let currentLocale = localStorage.getItem(storageKey) || defaultLocale;
 let guestDetails = {
   pronoun: '',
@@ -51,12 +51,12 @@ function renderCountdown() {
   };
 
   simplyCountdown('#countdown', {
-    year: 2025,
-    month: 5,
-    day: 22,
-    hours: 1,
-    minutes: 0,
-    seconds: 0,
+    year: 2026,
+    month: 12,
+    day: 20,
+    hours: 11,
+    minutes: 59,
+    seconds: 59,
     enableUtc: true,
     words: {
       days: { root: getText('countdown.day'), lambda: usePlural },
@@ -75,10 +75,10 @@ function renderCountdown() {
     zeroPad: false,
     removeZeroUnits: false,
     countUp: false,
-    onEnd: () => {},
-    onStop: () => {},
-    onResume: () => {},
-    onUpdate: () => {}
+    onEnd: () => { },
+    onStop: () => { },
+    onResume: () => { },
+    onUpdate: () => { }
   });
 }
 
