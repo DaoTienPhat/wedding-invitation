@@ -6,7 +6,7 @@
 }
 body {
   font-size: 1.2rem;
-  font-family: 'Work Sans', sans-serif;
+  font-family: 'Be Vietnam Pro', sans-serif;
   min-height: 4000px;
 }
 
@@ -35,7 +35,7 @@ body {
   text-shadow: var(--shadow);
 }
 .hero h1 {
-  font-family: 'Sacramento', cursive;
+  font-family: 'Allura', cursive;
   font-weight: 6rem;
   font-size: 6rem;
   margin-top: 30px;
@@ -59,6 +59,7 @@ body {
 /* .mynavbar */
 .mynavbar {
   background-color: rgba(225, 225, 225, 0.4) !important;
+  -webkit-backdrop-filter: blur(4px);
   backdrop-filter: blur(4px);
 }
 .mynavbar .offcanvas {
@@ -66,7 +67,7 @@ body {
 }
 .mynavbar .navbar-brand,
 .mynavbar .offcanvas-title {
-  font-family: 'Sacramento', cursive;
+  font-family: 'Allura', cursive;
   font-size: 3.2rem;
   font-weight: bold;
 }
@@ -92,7 +93,7 @@ body {
 .rsvp h2,
 .gifts h2 {
   color: var(--pink);
-  font-family: 'Sacramento';
+  font-family: 'Great Vibes', cursive;
   font-size: 5rem;
   font-weight: bold;
 }
@@ -113,7 +114,7 @@ body {
   margin-top: 75px;
 }
 .home .couple h3 {
-  font-family: 'Sacramento';
+  font-family: 'Great Vibes', cursive;
   font-size: 3rem;
   font-weight: bold;
   color: var(--pink);
@@ -313,8 +314,8 @@ body {
 
 /* footer */
 footer {
-  padding: 3rem;
-  background-color: var(--pink);
+  padding: 1rem;
+  background-color: black;
   color: white;
 }
 footer a {
@@ -349,6 +350,16 @@ footer li {
   justify-content: center; /* bikin muter ditengah-tengah */
   align-items: center; /* bikin muter ditengah-tengah */
   line-height: 0; /* bikin muter ditengah-tengah */
+  border: 0;
+  background: transparent;
+  appearance: none;
+}
+.audio-hidden {
+  display: none;
+}
+
+.maps-frame {
+  border: 0;
 }
 @keyframes muter {
   form {
