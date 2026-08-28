@@ -1,7 +1,8 @@
 const translations = globalThis.translations || {};
 const storageKey = 'weddingLocale';
-const defaultLocale = (globalThis.navigator?.language?.toLowerCase?.() || '').startsWith('en') ? 'en' : 'vi';
-let currentLocale = localStorage.getItem(storageKey) || defaultLocale;
+const defaultLocale = 'vi';
+const savedLocale = localStorage.getItem(storageKey);
+let currentLocale = savedLocale === 'en' ? 'en' : defaultLocale;
 let guestDetails = {
   pronoun: '',
   name: ''
