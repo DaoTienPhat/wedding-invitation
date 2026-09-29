@@ -52,9 +52,9 @@ function renderCountdown() {
   };
 
   simplyCountdown('#countdown', {
-    year: 2026,
+    year: 9990,
     month: 12,
-    day: 20,
+    day: 31,
     hours: 11,
     minutes: 59,
     seconds: 59,
