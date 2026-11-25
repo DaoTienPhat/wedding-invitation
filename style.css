@@ -17,7 +17,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url(img/prewed1.jpg);
+  background-image: url(img/background.png);
   background-size: cover; /* Membuat gambar menutupi area hero */
   background-repeat: no-repeat; /* Mencegah gambar berulang */
   background-position: center; /* Memusatkan gambar */
@@ -60,7 +60,7 @@ body {
 .mynavbar {
   background-color: rgba(225, 225, 225, 0.4) !important;
   -webkit-backdrop-filter: blur(4px);
-  backdrop-filter: blur(4px);
+  /* backdrop-filter: blur(4px); */
 }
 .mynavbar .offcanvas {
   height: 100vh;

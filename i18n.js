@@ -52,13 +52,13 @@ function renderCountdown() {
   };
 
   simplyCountdown('#countdown', {
-    year: 9990,
-    month: 12,
-    day: 31,
-    hours: 11,
-    minutes: 59,
-    seconds: 59,
-    enableUtc: true,
+    year: 2027,
+    month: 1,
+    day: 2,
+    hours: 17,
+    minutes: 0,
+    seconds: 0,
+    enableUtc: false,
     words: {
       days: { root: getText('countdown.day'), lambda: usePlural },
       hours: { root: getText('countdown.hour'), lambda: usePlural },
