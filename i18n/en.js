@@ -3,8 +3,8 @@ window.translations.en = {
   common: {
     brand: 'Phát & Hiền',
     and: 'and',
-    bankName: 'BCA',
-    bankAccount: '1234567 - DAO TIEN PHAT',
+    bankName: 'BIDV',
+    bankAccount: '3680374796 - DAO TIEN PHAT',
     designerHandle: '@Dino'
   },
   nav: {
@@ -27,60 +27,62 @@ window.translations.en = {
   },
   home: {
     heading: 'Wedding Celebration',
-    subheading: 'Held on December 20, 2026',
-    subheading2: 'in Xuyen Moc',
-    intro: 'With full respect, we would like to invite you to attend our wedding celebration.'
+    subheading: 'Held on January 02, 2027',
+    subheading2: 'in Xuyên Mộc',
+    intro: 'With full respect, we would like to invite you to attend',
+    intro2: 'our wedding celebration.'
   },
   couple: {
     groomName: 'Đào Tiến Phát',
     brideName: 'Nguyễn Thị Hiền',
-    groomIntro: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis nulla aliquam, quod nihil quo enim.',
-    brideIntro: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis nulla aliquam, quod nihil quo enim.',
-    groomParentsLine1: 'Son of Mr. Lorem',
-    groomParentsLine2: 'Mrs. Ipsum',
-    brideParentsLine1: 'Daughter of Mr. Ipsum',
-    brideParentsLine2: 'Mrs. Lorem'
+    groomIntro: ' ',
+    brideIntro: ' ',
+    groomParentsLine1: 'Son of Mr. Đào Nhân',
+    groomParentsLine2: 'Mrs. Phạm Thị Đức',
+    brideParentsLine1: 'Daughter of Mr. Nguyễn Đình Mậu',
+    brideParentsLine2: 'Mrs. Mai Thị Miên'
   },
   info: {
     heading: 'Event Information',
     addressLabel: 'Address:',
-    venue: 'Home',
-    addressLine: '50 Bạch Đằng, xã Hồ Tràm, thành phố Hồ Chí Minh, Việt Nam', mapButton: 'Open map',
+    venue: 'Nhà Hàng Gia Mẫn',
+    addressLine: '357, tỉnh lộ 329, Nhân Nghĩa, Xuyên Mộc, thành phố Hồ Chí Minh, Việt Nam',
+    mapButton: 'Open map',
     description: 'Please double-check the address and date. If you arrive at the venue and see no signs of the wedding, you may be on the wrong schedule or at the wrong place.',
-    eventDate: 'Sunday, December 22, 2026',
+    eventDate: 'Saturday, January 02, 2027',
     akad: {
       title: 'Wedding Ceremony',
-      time: '10:00 - 12:00',
-      note: 'We kindly ask for a calm and respectful atmosphere during the wedding ceremony.'
+      time: '11:00',
+      note: 'The Ceremony shall be solemnly held at the bride’s family residence, in the presence of both families, to commemorate this joyous and momentous occasion.'
     },
     reception: {
       title: 'Reception',
-      time: '12:00 - End',
+      time: '17:00 - End',
       note: 'It would be our honor and happiness if you would attend and bless us.'
     }
   },
   story: {
     eyebrow: 'How Our Love Blossomed',
     title: 'Our Story',
-    intro: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi officia deserunt nam, adipisci porro doloremque.',
-    timelineText: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident repellendus sint rerum adipisci, obcaecati aperiam!',
+    intro: 'the intro of our love story',
+    timelineText: 'Time line text of our love story',
     first: {
       title: 'First Meeting',
       date: '14 September 2014'
     },
     second: {
       title: 'Started Seriously',
-      date: 'November 11, 2020'
+      date: '*** **, 20**'
     },
     third: {
       title: 'Engagement',
-      date: 'November 22, 2026'
+      date: '*** **, 20**'
     }
   },
   gallery: {
     eyebrow: 'Memories of Our Journey',
     title: 'Photo Gallery',
-    intro: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, hic.',
+    intro: 'The intro of our photo gallery',
     caption: 'Groom & Bride'
   },
   rsvp: {
@@ -98,13 +100,15 @@ window.translations.en = {
   gifts: {
     eyebrow: 'A token of love',
     title: 'Send a Gift',
-    intro: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi, eum.',
+    intro: 'Our families wish to extend our deepest gratitude to all distinguished guests, beloved relatives, and dear friends who have graciously joined us in celebrating this momentous occasion.',
+    intro2: 'As we bring this celebration to a close, we sincerely apologize for any inadvertent shortcomings in our hospitality and humbly ask for your understanding. Your gracious presence, kind wishes, and heartfelt blessings have made this occasion all the more meaningful and unforgettable.',
+    intro3: 'With our heartfelt appreciation and deepest gratitude.',
     bank: 'Bank transfer',
-    saweria: 'Saweria'
+    saweria: 'QR Code'
   },
   footer: {
     rights: '©2025 Dino Wedding. All Rights Reserved.',
-    design: 'Design by:'
+    design: 'Design by: Phat Dao'
   },
   countdown: {
     day: 'day',
