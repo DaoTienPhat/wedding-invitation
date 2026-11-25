@@ -22,7 +22,7 @@ window.translations.vi = {
   hero: {
     to: 'Kính gửi',
     greeting: 'quý khách,',
-    subtitle: 'Chúng tôi sẽ cử hành hôn lễ vào ngày:',
+    subtitle: 'Chúng tôi sẽ cử hành hôn lễ trong:',
     cta: 'Xem Thiệp Cưới'
   },
   home: {
