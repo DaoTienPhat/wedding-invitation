@@ -35,8 +35,8 @@ window.translations.en = {
   couple: {
     groomName: 'Đào Tiến Phát',
     brideName: 'Nguyễn Thị Hiền',
-    groomIntro: ' ',
-    brideIntro: ' ',
+    groomIntro: 'Marriage is a daily commitment, sustained by love, respect, and shared responsibility.',
+    brideIntro: 'A lasting home is built through understanding, compassion, and standing by one another through every season of life.',
     groomParentsLine1: 'Son of Mr. Đào Nhân',
     groomParentsLine2: 'Mrs. Phạm Thị Đức',
     brideParentsLine1: 'Daughter of Mr. Nguyễn Đình Mậu',
@@ -64,8 +64,8 @@ window.translations.en = {
   story: {
     eyebrow: 'How Our Love Blossomed',
     title: 'Our Story',
-    intro: 'the intro of our love story',
-    timelineText: 'Time line text of our love story',
+    intro: 'Our story is shaped by meaningful moments, understanding, and the choice to stand by each other.',
+    timelineText: 'A meaningful milestone in our journey of building a loving partnership and a home together.',
     first: {
       title: 'First Meeting',
       date: '14 September 2014'
@@ -82,7 +82,7 @@ window.translations.en = {
   gallery: {
     eyebrow: 'Memories of Our Journey',
     title: 'Photo Gallery',
-    intro: 'The intro of our photo gallery',
+    intro: 'Each photograph captures a meaningful moment in our journey of love and the life we are building together.',
     caption: 'Groom & Bride'
   },
   rsvp: {
