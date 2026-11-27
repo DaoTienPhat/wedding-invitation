@@ -35,8 +35,8 @@ window.translations.vi = {
   couple: {
     groomName: 'Đào Tiến Phát',
     brideName: 'Nguyễn Thị Hiền',
-    groomIntro: ' ',
-    brideIntro: ' ',
+    groomIntro: 'Hôn nhân là sự lựa chọn cùng nhau mỗi ngày, được gìn giữ bằng yêu thương, tôn trọng và trách nhiệm.',
+    brideIntro: 'Một mái ấm bền lâu được vun đắp bằng sự thấu hiểu, sẻ chia và đồng hành qua mọi chặng đường.',
     groomParentsLine1: 'Con trai của ông Đào Nhân',
     groomParentsLine2: 'bà Phạm Thị Đức',
     brideParentsLine1: 'Con gái của ông Nguyễn Đình Mậu',
@@ -64,8 +64,8 @@ window.translations.vi = {
   story: {
     eyebrow: 'Hành trình tình yêu của chúng tôi',
     title: 'Câu chuyện của chúng tôi',
-    intro: 'Intro hành trình',
-    timelineText: 'TImeline text hành trình',
+    intro: 'Câu chuyện của chúng tôi được tạo nên từ những dấu mốc đáng nhớ, sự thấu hiểu và lựa chọn luôn đồng hành bên nhau.',
+    timelineText: 'Một dấu mốc đáng nhớ trên hành trình cùng nhau vun đắp tình yêu và hướng đến mái ấm chung.',
     first: {
       title: 'Lần đầu gặp',
       date: '14 Tháng 9, 2014'
@@ -82,7 +82,7 @@ window.translations.vi = {
   gallery: {
     eyebrow: 'Kỷ niệm hành trình của chúng tôi',
     title: 'Thư viện ảnh',
-    intro: 'Intro thư viện ảnh',
+    intro: 'Mỗi bức ảnh lưu giữ một dấu mốc đáng nhớ trong hành trình yêu thương và xây dựng cuộc sống chung của chúng tôi.',
     caption: 'Cô dâu & Chú rể'
   },
   rsvp: {
